@@ -1,0 +1,38 @@
+html{
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+a{
+	display: inline-block;
+	text-decoration: none;
+	color: #000;
+}
+ul,
+li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+button{
+	outline: none;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #040405;
+}
+.container-fluid{
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container{
+  max-width: 708px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
