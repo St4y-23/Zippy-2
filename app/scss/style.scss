@@ -22,8 +22,11 @@
 		font-weight: 700;
 		font-size: 30px;
 		color: #ffffff;
+		transition: all .5s;
 	}
-	
+	a:hover{
+		color: $yellow;
+	}
 }
 .header__menu{
 	font-weight: 700;
@@ -104,9 +107,7 @@
 	font-weight: 700;
 	font-size: 44px;
 	text-align: center;
-}
-.welcome__title{
-	margin-bottom: 55px;
+	margin-bottom: 45px;
 }
 .welcome__wrapper{
 	margin-bottom: 60px;
@@ -169,7 +170,6 @@
 		height: 33px;
 	}
 }
-
 .welcome__item-title{
 	text-transform: uppercase;
 	font-size: 15px;
@@ -181,4 +181,62 @@
 	font-size: 15px;
 	color: #929293;
 	margin-bottom: 37px;
+}
+
+// PROJECTS
+.projects__inner{
+	display: flex;
+	justify-content: 25%;
+	margin-bottom: 80px;
+}
+.projects__item{
+	max-width: 350px;
+	&:hover{
+		.projects__item__inner{
+			background-color: $yellow;
+			transition: all .5s;
+		}
+		.projects__item-text{
+			color: #827339;
+			transition: all .3s;
+		}
+		.projects__item-btn{
+			a{
+				color: #fff;
+				background-color: $purple;
+				transition: all .3s;
+			}
+		}
+	}
+}
+.projects__item__inner{
+	height: 240px;
+	background-color: #efefef;
+	padding-left: 43px;
+	padding-right: 30px;
+}
+.projects__item-title{
+	padding-top: 45px;
+	margin-bottom: 14px;
+	font-weight: 700;
+	color: $text;
+	text-transform: uppercase;
+}
+.projects__item-text{
+	color: #929293;
+	line-height: 24px;
+	margin-bottom: 15px;
+}
+.projects__item-btn{
+	a{
+		color: #323232;
+		font-size: 11px;
+		font-weight: 700;
+		border-radius: 5px;
+		margin-right: 5px;
+		padding: 15px 25px;
+		background-color: #fefefe;
+		transition: all .3s;
+		text-transform: uppercase;
+	}
 }
